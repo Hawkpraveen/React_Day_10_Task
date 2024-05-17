@@ -275,17 +275,17 @@ const Create = () => {
                 </div>
                 <div className="row mb-2 d-flex justify-content-center">
                   <button
-                    className="btn btn-success col-md-2 col-sm-2 col-5 m-2"
+                    className="btn btn-success col-md-2 col-sm-2 col-5 m-2 fs-5"
                     type="submit"
                     onClick={handleSubmit}
                   >
-                    Create
+                  <i class="fa-solid fa-user-plus"></i>  Create
                   </button>
                   <button
-                    className="btn btn-danger col-md-2 col-sm-2 col-5 m-2"
+                    className="btn btn-danger col-md-2 col-sm-2 col-5 m-2 fs-5"
                     onClick={handleRest}
                   >
-                    Reset
+                   <i class="fa-solid fa-eraser"></i> Reset
                   </button>
                 </div>
               </form>

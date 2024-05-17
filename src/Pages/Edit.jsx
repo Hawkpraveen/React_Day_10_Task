@@ -74,19 +74,19 @@ const Edit = ({ id }) => {
     //After updating navigating the user to the dashboard
     navigate("/details");
   };
-  const handleRest =(e)=>{
-    e.target.value.remove()
-  }
+  const handleRest = (e) => {
+    e.target.value.remove();
+  };
   return (
     <div className="container text-center mt-3">
       <div className="row">
         <div className="col">
           <div className="card mb-4 col-12 card-edit">
             <div className="card-header text-uppercase text-center fs-3 fw-bolder">
-            Currently Editing the Details of User - {editData.name}
+              Currently Editing the Details of User - {editData.name}
             </div>
             <div className="card-body">
-              <form >
+              <form>
                 <div className="row fs-5 fw-bolder ">
                   <div className="mb-3 row col-md-4 col-sm-12 col-12 ms-2">
                     <label className="small mb-1" htmlFor="id">
@@ -103,7 +103,9 @@ const Edit = ({ id }) => {
                     />
                   </div>
                   <div className=" col-12 col-md-4 col-sm-12 ">
-                    <label className="small mb-1 " htmlFor="username">User Name</label>
+                    <label className="small mb-1 " htmlFor="username">
+                      User Name
+                    </label>
                     <input
                       className="form-control  col-12"
                       id="username"
@@ -132,12 +134,14 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-6 col-sm-12  ">
-                    <label className="small mb-1 "  htmlFor="useremail">User Email </label>
+                    <label className="small mb-1 " htmlFor="useremail">
+                      User Email{" "}
+                    </label>
                     <input
                       className="form-control  col-12"
                       type="text"
                       name="email"
-                      id='useremail'
+                      id="useremail"
                       placeholder="Enter your email"
                       value={editData.email}
                       onChange={handleChange}
@@ -146,9 +150,11 @@ const Edit = ({ id }) => {
                 </div>
                 <div className="row mb-3 fs-5 fw-bolder">
                   <div className=" col-12 col-md-3 col-sm-12  ">
-                    <label className="small mb-1 " htmlFor="street">User address Street </label>
+                    <label className="small mb-1 " htmlFor="street">
+                      User address Street{" "}
+                    </label>
                     <input
-                    id="street"
+                      id="street"
                       className="form-control  col-12"
                       placeholder="Enter your street name"
                       type="text"
@@ -159,7 +165,9 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-3 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="suite">User address Suite</label>
+                    <label className="small mb-1" htmlFor="suite">
+                      User address Suite
+                    </label>
                     <input
                       className="form-control  col-12"
                       type="text"
@@ -172,7 +180,9 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-3 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="city">User address City</label>
+                    <label className="small mb-1" htmlFor="city">
+                      User address City
+                    </label>
                     <input
                       className="form-control  col-12"
                       type="text"
@@ -185,7 +195,9 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-3 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="zipcode">User address Zipcode:</label>
+                    <label className="small mb-1" htmlFor="zipcode">
+                      User address Zipcode:
+                    </label>
                     <input
                       className="form-control  col-12"
                       type="text"
@@ -199,9 +211,11 @@ const Edit = ({ id }) => {
                 </div>
                 <div className="row mb-3 fs-5 fw-bolder">
                   <div className=" col-12 col-md-5 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="phone">User Phone </label>
+                    <label className="small mb-1" htmlFor="phone">
+                      User Phone{" "}
+                    </label>
                     <input
-                    className="form-control  col-12"
+                      className="form-control  col-12"
                       type="text"
                       name="phone"
                       id="phone"
@@ -212,9 +226,11 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-5 col-sm-12 ">
-                    <label className="small mb-1" htmlFor="website">Website </label>
+                    <label className="small mb-1" htmlFor="website">
+                      Website{" "}
+                    </label>
                     <input
-                    className="form-control  col-12"
+                      className="form-control  col-12"
                       type="text"
                       id="webiste"
                       placeholder="Enter your website name"
@@ -226,9 +242,11 @@ const Edit = ({ id }) => {
                 </div>
                 <div className="row mb-3 fs-5 fw-bolder">
                   <div className=" col-12 col-md-6 col-sm-12 ">
-                    <label className="small mb-1" htmlFor="companyname">Company Name </label>
+                    <label className="small mb-1" htmlFor="companyname">
+                      Company Name{" "}
+                    </label>
                     <input
-                    className="form-control  col-12"
+                      className="form-control  col-12"
                       type="text"
                       id="companyname"
                       placeholder="Enter your company's name"
@@ -239,9 +257,11 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-6 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="catchphrase">Company Catch Phrase :</label>
+                    <label className="small mb-1" htmlFor="catchphrase">
+                      Company Catch Phrase :
+                    </label>
                     <input
-                    className="form-control  col-12"
+                      className="form-control  col-12"
                       type="text"
                       id="catchphrase"
                       placeholder="Enter your company's catch phrase"
@@ -252,9 +272,11 @@ const Edit = ({ id }) => {
                   </div>
 
                   <div className=" col-12 col-md-6 col-sm-12  ">
-                    <label className="small mb-1" htmlFor="bs">Company Bussiness Stratergy :</label>
+                    <label className="small mb-1" htmlFor="bs">
+                      Company Bussiness Stratergy :
+                    </label>
                     <input
-                    className="form-control  col-12"
+                      className="form-control  col-12"
                       type="text"
                       id="bs"
                       placeholder="Enter your company's bussiness stratergy"
@@ -264,11 +286,21 @@ const Edit = ({ id }) => {
                     />
                   </div>
                 </div>
+
                 <div className="row mb-2 d-flex justify-content-center ">
-                  <button className="btn btn-success col-md-2 col-sm-2 col-5 m-2" type="submit" onClick={handleSubmit}>
-                    Update
+                  <button
+                    className="btn btn-success col-md-2 col-sm-2 col-5 m-2"
+                    type="submit"
+                    onClick={handleSubmit}
+                  >
+                    <i class="fa-sharp fa-solid fa-user-pen"></i> Update
                   </button>
-                  <button className="btn btn-danger col-md-2 col-sm-2 col-5 m-2" onClick={handleRest}>Reset</button>
+                  <button
+                    className="btn btn-danger col-md-2 col-sm-2 col-5 m-2"
+                    onClick={handleRest}
+                  >
+                    <i class="fa-sharp fa-solid fa-eraser"></i> Reset
+                  </button>
                 </div>
               </form>
             </div>

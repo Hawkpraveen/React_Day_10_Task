@@ -36,9 +36,9 @@ const Details = ({ setId }) => {
     <>
     <div className="table-responsive p-2 " >
     <table className="table table-dark align-middle table-striped">
-        <thead>
+        <thead className="text-center">
           <tr>
-            <th scope="col">Sl No</th>
+            <th scope="col" >Sl No</th>
             <th scope="col">Name</th>
             <th scope="col">User Name</th>
             <th scope="col">Email</th>
@@ -80,17 +80,17 @@ const Details = ({ setId }) => {
                       handleEdit(element.id);
                     }}
                   >
-                    Edit
+                    <span class="fa-sharp fa-solid fa-user-pen">&nbsp;Edit</span>
                   </button>
                 </td>
                 <td>
                   <button
-                    className="btn btn-danger"
+                    className="btn btn-danger "
                     onClick={() => {
                       handleDelete(element.id);
                     }}
                   >
-                    Delete
+                    <i class="fa-sharp fa-solid fa-trash ">&nbsp;Delete</i>
                   </button>
                 </td>
               </tr>
@@ -99,12 +99,13 @@ const Details = ({ setId }) => {
         </tbody>
       </table>
       <button
-        className="btn btn-info m-4"
+        className="btn btn-info m-4 fs-5"
         onClick={() => {
           navigate("/create");
+          
         }}
       >
-        Create
+       <i class="fa-solid fa-user-plus"></i>&nbsp; Create
       </button>
     </div>
       
